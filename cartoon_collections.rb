@@ -33,9 +33,10 @@
 
 
 def roll_call_dwarves(array)
-  array.each_with_index do |value, index|
-    puts "#{index + 1}. #{value}"
-  end
+  # array.each_with_index do |value, index|
+  #   puts "#{index + 1}. #{value}"
+  # end
+  array.each.with_index(1) {|value, index| puts "#{index}. #{value}"}
 end
 
 def summon_captain_planet(array)
